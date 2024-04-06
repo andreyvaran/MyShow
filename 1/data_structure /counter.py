@@ -8,7 +8,8 @@ fruit_counter.update(['apple', 'orange', 'kiwi'])
 
 print(fruit_counter)
 
-fruit_counter.subtract(['orange', 'orange', 'kiwi'])
+fruit_counter.subtract(['orange', 'orange', 'kiwi', 'kiwi', 'kiwi'])
+fruit_counter.update([ 'kiwi','kiwi'])
 print(fruit_counter)
 
 print(list(fruit_counter.elements()))

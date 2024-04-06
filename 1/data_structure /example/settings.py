@@ -16,7 +16,8 @@ session_settings = {
 }
 
 # Сначала указываем самые приоритетные настройки
-app_settings = ChainMap(session_settings, user_settings, global_settings)
+app_settings = ChainMap(session_settings ,  user_settings , global_settings)
+# app_settings = ChainMap(session_settings >  user_settings > global_settings)
 
 print(app_settings)
 print("Итоговая конфигурация:")

@@ -11,6 +11,8 @@ class GeoPoint:
     longitude: float
     elevation: float
 
+    def asd(self):
+        return self.latitude + self.elevation
 
 points = [GeoPoint(latitude=random.random(), longitude=random.random(), elevation=random.random()) for _ in
           range(100000)]
@@ -50,3 +52,4 @@ print()
 
 print(f"profit {asizeof.asizeof(points) / asizeof.asizeof(new_points)}")
 print(f"profit {asizeof.asizeof(pydantic_points) / asizeof.asizeof(new_points)}")
+print(f"profit {asizeof.asizeof(points) / asizeof.asizeof(pydantic_points)}")

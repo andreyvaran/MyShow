@@ -3,7 +3,7 @@ from typing import List, Optional
 from pydantic import Field, TypeAdapter
 
 
-@dataclass
+@dataclass(slots=True)
 class User:
     id: int
     name: str = 'John Doe'

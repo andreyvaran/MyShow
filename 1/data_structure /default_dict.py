@@ -1,10 +1,10 @@
 from collections import defaultdict
 
-dd = defaultdict(int)
+dd = defaultdict()
 
-dd['apple'] += 1
-dd['banana'] += 1
-dd['banana'] += 2
+dd['apple'] += '1'
+dd['banana'] += "1"
+dd['banana'] += "2"
 
 print(dd['kiwi'])
 
